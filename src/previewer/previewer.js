@@ -1,6 +1,6 @@
 import React from "react";
 import {defaultPreview} from "./previewer_contants";
-
+import './previewer_style.css';
 class Previewer extends React.Component
 {
     constructor(props) {
@@ -27,9 +27,17 @@ class Previewer extends React.Component
     render() {
         return(
           <div id="body">
-              <div id="edit">
-                  <textarea id="editor" typeof="textarea" value={this.state.input} onChange={this.handleChange}/>             </div>
-              <div id="preview"><div dangerouslySetInnerHTML={this.props.content} /></div>
+              <div id="box">
+                <div id="edit">
+                    <h3 className={"editor-title"}>Write your markdown here</h3>
+                    <textarea id="editor" typeof="textarea" value={this.state.input} onChange={this.handleChange}/></div>
+                <div id="preview">
+                    <h3 className={"preview-title"}>Preview</h3>
+                    <div id={"content"}>
+                         <div dangerouslySetInnerHTML={this.props.content} />
+                    </div>
+                </div>
+              </div>
           </div>
         );
     }

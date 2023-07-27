@@ -1,0 +1,113 @@
+#body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  font-family: "Press Start 2P";
+}
+#body #box {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 100% 0%, #FF710A 20%, rgba(251, 90, 0, 0.64) 50%, rgba(175, 95, 2, 0.52) 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#body #box #edit {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+#body #box #edit .editor-title {
+  color: antiquewhite;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 17px;
+}
+#body #box #edit #editor {
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 1.7;
+  background-color: rgba(0, 0, 0, 0);
+  color: antiquewhite;
+  border: none;
+  margin: 0 auto;
+  font-family: "Press Start 2P";
+  width: 95%;
+  height: 90%;
+  max-height: 90%;
+  min-height: 90%;
+  max-width: 100%;
+}
+#body #box #preview {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 45%;
+  height: 95%;
+  border: 1px solid black;
+}
+#body #box #preview .preview-title {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 17px;
+}
+#body #box #preview #content {
+  margin: 0 20px;
+  max-height: 90%;
+  overflow: auto;
+  word-wrap: break-word;
+}
+#body #box #preview #content h1 {
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+#body #box #preview #content h2 {
+  border-bottom: 2px solid black;
+}
+#body #box #preview #content a {
+  color: white;
+}
+#body #box #preview #content code {
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgba(210, 142, 108, 0.94);
+}
+#body #box #preview #content blockquote {
+  padding-left: 10px;
+  border-left: 5px solid darkblue;
+}
+#body #box #preview #content pre {
+  padding: 10px;
+  background-color: rgba(205, 186, 210, 0.64);
+  overflow: auto;
+}
+#body #box #preview #content pre code {
+  font-size: 18;
+  padding: unset;
+  background-color: rgba(0, 0, 0, 0);
+}
+#body #box #preview #content strong {
+  padding: 10px;
+  font-weight: bolder;
+}
+
+img {
+  padding: 10px;
+  max-height: 200px;
+  height: auto;
+  width: 95%;
+  object-fit: contain;
+  display: block;
+}
+
+/*# sourceMappingURL=previewer_style.css.map */
