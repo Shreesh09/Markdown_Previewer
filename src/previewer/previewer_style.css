@@ -75,6 +75,9 @@
 #body #box #preview-box #content h2 {
   border-bottom: 2px solid black;
 }
+#body #box #preview-box #content p {
+  line-height: 1.5;
+}
 #body #box #preview-box #content a {
   color: white;
 }
