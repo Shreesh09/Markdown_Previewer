@@ -6,11 +6,9 @@ const convertToJSX = (text) => {
              return c;
          else return "  \n";
      }).join("");
-    console.log(text);
-    text = text.replace(/(\\r)|(\\n)/g, "  \n");
-    //console.log(text.charCodeAt(0));
-    const JSX = marked.parse(text);
 
+    text = text.replace(/(\\r)|(\\n)/g, "  \n");
+    const JSX = marked.parse(text);
     return (JSX);
     };
 

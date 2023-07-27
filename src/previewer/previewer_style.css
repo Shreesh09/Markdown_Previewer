@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: black;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
 }
 #body #box {
   width: 100%;
@@ -40,20 +40,20 @@
   color: antiquewhite;
   border: none;
   margin: 0 auto;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   width: 95%;
   height: 90%;
   max-height: 90%;
   min-height: 90%;
   max-width: 100%;
 }
-#body #box #preview {
+#body #box #preview-box {
   background-color: rgba(0, 0, 0, 0.15);
   width: 45%;
   height: 95%;
   border: 1px solid black;
 }
-#body #box #preview .preview-title {
+#body #box #preview-box .preview-title {
   font-size: 24px;
   color: black;
   margin: 0;
@@ -61,42 +61,43 @@
   border-bottom: 1px solid black;
   padding: 17px;
 }
-#body #box #preview #content {
+#body #box #preview-box #content {
   margin: 0 20px;
   max-height: 90%;
+  width: 97%;
   overflow: auto;
   word-wrap: break-word;
 }
-#body #box #preview #content h1 {
+#body #box #preview-box #content h1 {
   text-align: center;
   border-bottom: 3px solid black;
 }
-#body #box #preview #content h2 {
+#body #box #preview-box #content h2 {
   border-bottom: 2px solid black;
 }
-#body #box #preview #content a {
+#body #box #preview-box #content a {
   color: white;
 }
-#body #box #preview #content code {
+#body #box #preview-box #content code {
   padding: 5px;
   font-size: 15px;
   background-color: rgba(210, 142, 108, 0.94);
 }
-#body #box #preview #content blockquote {
+#body #box #preview-box #content blockquote {
   padding-left: 10px;
   border-left: 5px solid darkblue;
 }
-#body #box #preview #content pre {
+#body #box #preview-box #content pre {
   padding: 10px;
   background-color: rgba(205, 186, 210, 0.64);
   overflow: auto;
 }
-#body #box #preview #content pre code {
-  font-size: 18;
+#body #box #preview-box #content pre code {
+  font-size: 18px;
   padding: unset;
   background-color: rgba(0, 0, 0, 0);
 }
-#body #box #preview #content strong {
+#body #box #preview-box #content strong {
   padding: 10px;
   font-weight: bolder;
 }

@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: black;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
 
   #box {
     width: 100%;
@@ -39,7 +39,7 @@
         color: antiquewhite;
         border: none;
         margin: 0 auto;
-        font-family: "Press Start 2P";
+        font-family: "Press Start 2P", sans-serif;
         width: 95%;
         height: 90%;
         max-height: 90%;
@@ -48,7 +48,7 @@
       }
     }
 
-    #preview{
+    #preview-box{
       background-color: rgba(0, 0, 0, .15);
       width: 45%;
       height: 95%;
@@ -66,6 +66,7 @@
       #content{
         margin: 0 20px;
         max-height: 90%;
+        width: 97%;
         overflow: auto;
         word-wrap: break-word;
         h1 {
@@ -94,7 +95,7 @@
 
         pre {
           code {
-            font-size: 18;
+            font-size: 18px;
             padding: unset;
             background-color: rgba(0,0,0,0);
           }

@@ -31,10 +31,10 @@ class Previewer extends React.Component
                 <div id="edit">
                     <h3 className={"editor-title"}>Write your markdown here</h3>
                     <textarea id="editor" typeof="textarea" value={this.state.input} onChange={this.handleChange}/></div>
-                <div id="preview">
+                <div id="preview-box">
                     <h3 className={"preview-title"}>Preview</h3>
                     <div id={"content"}>
-                         <div dangerouslySetInnerHTML={this.props.content} />
+                         <div id={"preview"} dangerouslySetInnerHTML={this.props.content} />
                     </div>
                 </div>
               </div>
