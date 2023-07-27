@@ -3,10 +3,16 @@ import {convertToJSX} from './text_to_JSX';
 import {createStore} from 'redux';
 import * as actions from './actions';
 
-const textReducer = (state = <div></div>, action) => {
+const defaultState = {
+    __html: <div></div>,
+}
+
+const textReducer = (state = defaultState, action) => {
   switch(action.type)
   {
-      case constants.DISPLAY: return convertToJSX(action.text);
+      case constants.DISPLAY: return {
+          __html: convertToJSX(action.text),
+      };
       default: return state;
   }
 };
@@ -17,9 +23,9 @@ const passStateToProps = (state) => ({
    content: state
 });
 
-const passActionsToProps = () => ({
+const passActionsToProps = (dispatch) => ({
    submitText(text) {
-       actions.displayText(text);
+       dispatch(actions.displayText(text));
    },
 });
 

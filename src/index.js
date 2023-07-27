@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider, connect } from 'react-redux';
-import {store, passActionsToProps, passStateToProps} from "./Redux/state";
+import {store, passActionsToProps, passStateToProps} from "./redux/state";
 import App from './App';
+import {Previewer} from "./previewer/previewer";
 
-const Container = connect(passStateToProps, passActionsToProps)(App);
+const Container = connect(passStateToProps, passActionsToProps)(Previewer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
