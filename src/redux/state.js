@@ -2,7 +2,6 @@ import * as constants from "./constants";
 import {convertToJSX} from './text_to_JSX';
 import {createStore} from 'redux';
 import * as actions from './actions';
-
 const defaultState = {
     __html: <div></div>,
 }

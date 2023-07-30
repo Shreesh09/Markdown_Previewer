@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: 'PressStart2P-Regular';
+  src: local('PressStart2P-Regular'), url(../fonts/PressStart2P-Regular.ttf) format('truetype');
+}
+
 #body {
   position: absolute;
   width: 100%;
@@ -5,7 +11,7 @@
   top: 0;
   left: 0;
   background-color: black;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: PressStart2P-Regular, sans-serif;
 
   #box {
     width: 100%;
@@ -39,7 +45,7 @@
         color: antiquewhite;
         border: none;
         margin: 0 auto;
-        font-family: "Press Start 2P", sans-serif;
+        font-family: PressStart2P-Regular, sans-serif;
         width: 95%;
         height: 90%;
         max-height: 90%;
